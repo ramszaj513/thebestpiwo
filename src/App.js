@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
+const API_BASE_URL = 'https://thebestpiwo-backend.onrender.com';
+
 function App() {
     const [question, setQuestion] = useState(null);
     const [leaderboard, setLeaderboard] = useState([]);
@@ -9,7 +11,7 @@ function App() {
 
     const fetchQuestion = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/question');
+            const response = await axios.get(API_BASE_URL + '/question');
             setQuestion(response.data);
         } catch (error) {
             console.error('Error fetching question:', error);
@@ -18,7 +20,7 @@ function App() {
 
     const fetchLeaderboard = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/leaderboard');
+            const response = await axios.get(API_BASE_URL + '/leaderboard');
             setLeaderboard(response.data);
         } catch (error) {
             console.error('Error fetching leaderboard:', error);
@@ -29,7 +31,7 @@ function App() {
         if (!question) return;
 
         try {
-            await axios.post('http://localhost:8080/answer', {
+            await axios.post(API_BASE_URL + '/answer', {
                 id: question.id,
                 winnerPiwoId: winnerId,
             });
