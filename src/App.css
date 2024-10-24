@@ -1,5 +1,5 @@
 .app-container {
-  background-color: #333; /* Dark background */
+  background-color: #1e1e1e; /* Dark background */
   color: white; /* White text for contrast */
   text-align: center;
   padding: 40px;
@@ -16,11 +16,11 @@
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   margin: 30px 0;
-  background-color: #333; /* Slightly lighter background for question box */
+  background-color: #1e1e1e; /* Slightly lighter background for question box */
 }
 
 .beer-button {
-  background-color: #434343; /* Button color */
+  background-color: #303030; /* Button color */
   color: white; /* Text color */
   border: none; /* Remove default border */
   padding: 15px 30px; /* Padding for button size */
@@ -45,9 +45,8 @@
 
 .leaderboard-container {
   margin-top: 30px; /* Space above leaderboard */
-  border: 2px solid #555; /* Border for leaderboard box */
-  border-radius: 10px; /* Rounded corners */
-  background-color: #434343; /* Slightly lighter background for leaderboard box */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #303030; /* Slightly lighter background for leaderboard box */
   padding: 20px; /* Padding for leaderboard */
 }
 
@@ -85,11 +84,11 @@
 
 /* Style for the top three leaderboard entries */
 .leaderboard-table tbody tr:nth-child(1) {
-  background-color: #6e5717; /* Dark gold for first place */
+  background-color: #634f15; /* Dark gold for first place */
 }
 
 .leaderboard-table tbody tr:nth-child(2) {
-  background-color: #6c6c6c; /* Dark silver for second place */
+  background-color: #606060; /* Dark silver for second place */
 }
 
 .leaderboard-table tbody tr:nth-child(3) {

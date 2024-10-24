@@ -45,7 +45,7 @@ function App() {
 
     return (
         <div className="app-container">
-            <h1 className="top-title">Które piwo jest potężniejsze?</h1>
+            <h1 className="top-title">Which piwo is better?</h1>
 
             {question && (
                 <div className="question-container">
