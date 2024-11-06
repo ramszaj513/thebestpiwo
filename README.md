@@ -1,3 +1,3 @@
-## Simple frontend for the beer rating app
-# written in React
+# Simple frontend for the beer rating app
+## written in React
 
